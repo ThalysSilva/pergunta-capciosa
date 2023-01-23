@@ -20,15 +20,15 @@ export default function Home() {
       </Head>
       <main
         className={
-          "flex flex-col flex-1 w-full bg-gradient-to-tr from-cyan-500 to-blue-500  items-center"
+          "flex flex-col flex-1 w-full bg-gradient-to-tr from-cyan-500 to-blue-500 justify-center items-center"
         }
       >
         <div
           ref={questionBoxRef}
-          className="flex flex-col h-fit w-fit font-sans font-bold bg-white-200 rounded-xl p-6 mt-64 gap-6 mx-6 "
+          className="flex flex-col h-fit w-fit font-sans font-bold bg-white-200 rounded-xl p-6 gap-6 mx-6 "
         >
           <span
-            className="text-7xl text-center w-[500px] whitespace-pre-wrap"
+            className="text-7xl text-center xl:w-[500px] whitespace-pre-wrap"
             id={"title"}
           >
             {!youAreDumb
