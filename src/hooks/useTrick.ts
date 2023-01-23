@@ -18,7 +18,7 @@ export function useTrick() {
     setOriginalTopPosition(originalTopPosition);
   }, [noAnswerRef]);
 
-  function handleHover() {
+  function switchPosition() {
     const body = document.querySelector("body");
     if (!body) return;
 
@@ -48,7 +48,7 @@ export function useTrick() {
 
   return {
     noAnswerRef,
-    handleHover,
+    switchPosition,
     handleClick,
     questionBoxRef,
     youAreDumb,
