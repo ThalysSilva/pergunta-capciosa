@@ -4,11 +4,11 @@ import Head from "next/head";
 
 export default function Home() {
   const {
-    handleClick,
+    questionBoxRef,
     switchPosition,
+    handleClick,
     noAnswerRef,
     youAreDumb,
-    questionBoxRef,
   } = useTrick();
   return (
     <>

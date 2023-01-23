@@ -1,12 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 
 export function useTrick() {
-  const [youAreDumb, setYouAreDumb] = useState(false);
   const [originalLeftPosition, setOriginalLeftPosition] = useState(0);
   const [originalTopPosition, setOriginalTopPosition] = useState(0);
-  const noAnswerRef = useRef(null);
+  const [youAreDumb, setYouAreDumb] = useState(false);
   const questionBoxRef = useRef(null);
-
+  const noAnswerRef = useRef(null);
 
   useEffect(() => {
     if (noAnswerRef.current === null) return;
